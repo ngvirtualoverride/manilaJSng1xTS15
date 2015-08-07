@@ -1,1 +1,4 @@
 jspm_packages
+app
+typings/angular
+typings/jquery
