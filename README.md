@@ -17,4 +17,7 @@ After completing installation type in your favourite shell:
 * `tsc` to compile the typescript code
 * `ss` or `superstatic`  to run the web server then browse the url provided
 
+* http://localhost:3474/src/class-interface 
+* http://localhost:3474/src/hello-world
+
 
