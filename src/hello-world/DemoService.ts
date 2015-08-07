@@ -1,18 +1,20 @@
 
 export interface IDemoService {
-	getPersons(): ng.IPromise<string[]>
+	getPersons(): ng.IPromise<IResposeData>
+}
+
+export interface IResposeData {
+	data: string[]
 }
 
 export class DemoService implements IDemoService {
 
 	static $inject = ['$http'];
 
-	constructor(private $http: ng.IHttpService) {
-		console.log(this.$http);
-	}
+	constructor(private $http: ng.IHttpService) { }
 
-	getPersons(): ng.IPromise<string[]> {
-		return this.$http.get('../../data/persons.json');
+	getPersons(): ng.IPromise<IResposeData> {
+		return this.$http.get('../../data/countries.json');
 	}
 }	
 	
