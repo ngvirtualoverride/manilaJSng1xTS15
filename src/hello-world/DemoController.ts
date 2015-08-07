@@ -3,10 +3,8 @@ import * as angular from 'angular';
 
 export class DemoController {	
 	  message: string;
-	  countries: Array<string>;
+	  countries: string[];
 	  
-	  response: ng.IPromise<string>
-	
 	  static $inject = ['DemoService'];
 	
 	  constructor(private demoService: services.IDemoService) {  

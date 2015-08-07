@@ -15,6 +15,9 @@ class Student extends Person {
 	}
 }
 
+class Employee extends Person {
+}
+
 class Main {
 	constructor(private person: IPerson){
 	}
@@ -24,8 +27,19 @@ class Main {
 	}
 }
 
-var student = new Student('Juan', 'Dela Cruz');
+var student = new Student('1111', 'Dela Cruz');
 student.level = 'College';
 
 var main = new Main(student);
 main.display();
+
+
+var employee = new Employee("Pedro", "Pendoko");
+var main = new Main(employee);
+main.display();
+
+
+
+
+
+
